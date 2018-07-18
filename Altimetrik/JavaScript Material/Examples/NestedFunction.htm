@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Nested Function Example</title>
+<script>
+var a=1
+function f() {
+  function g() {
+     alert(a)
+   }
+    return g
+}
+var func = f()
+func()
+</script>
+</head>
+<body>
+<h2>Nested function example</h2>
+</body>
+</html>

@@ -1,0 +1,424 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Cantabria",
+               "short_name" : "S",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Cantabria",
+               "short_name" : "Cantabria",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Spain",
+               "short_name" : "ES",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Cantabria, Spain",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.5136929,
+                  "lng" : -3.149652
+               },
+               "southwest" : {
+                  "lat" : 42.75804979999999,
+                  "lng" : -4.8517782
+               }
+            },
+            "location" : {
+               "lat" : 43.1828396,
+               "lng" : -3.9878427
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.5136929,
+                  "lng" : -3.149652
+               },
+               "southwest" : {
+                  "lat" : 42.75804979999999,
+                  "lng" : -4.8517782
+               }
+            }
+         },
+         "place_id" : "ChIJy78OCdsgSQ0RoMvJc4L1BAM",
+         "types" : [ "administrative_area_level_2", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "S",
+               "short_name" : "S",
+               "types" : [ "premise" ]
+            },
+            {
+               "long_name" : "1225",
+               "short_name" : "1225",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "West Prospect Road",
+               "short_name" : "W Prospect Rd",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Prospect/Shields",
+               "short_name" : "Prospect/Shields",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Fort Collins",
+               "short_name" : "Fort Collins",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Larimer County",
+               "short_name" : "Larimer County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Colorado",
+               "short_name" : "CO",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "80526",
+               "short_name" : "80526",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "S, 1225 W Prospect Rd, Fort Collins, CO 80526, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.5664445,
+                  "lng" : -105.1003647
+               },
+               "southwest" : {
+                  "lat" : 40.5662008,
+                  "lng" : -105.1006925
+               }
+            },
+            "location" : {
+               "lat" : 40.5663115,
+               "lng" : -105.1005434
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.56767163029149,
+                  "lng" : -105.0991796197085
+               },
+               "southwest" : {
+                  "lat" : 40.56497366970849,
+                  "lng" : -105.1018775802915
+               }
+            }
+         },
+         "place_id" : "ChIJtwvkY0pKaYcRA22uMmuBztY",
+         "types" : [ "premise" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "S",
+               "short_name" : "S",
+               "types" : [ "premise" ]
+            },
+            {
+               "long_name" : "49",
+               "short_name" : "49",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Showers Drive",
+               "short_name" : "Showers Dr",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "The Crossings",
+               "short_name" : "The Crossings",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Mountain View",
+               "short_name" : "Mountain View",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Santa Clara County",
+               "short_name" : "Santa Clara County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "California",
+               "short_name" : "CA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "94040",
+               "short_name" : "94040",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "S, 49 Showers Dr, Mountain View, CA 94040, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 37.4052716,
+                  "lng" : -122.1036716
+               },
+               "southwest" : {
+                  "lat" : 37.4050279,
+                  "lng" : -122.1040571
+               }
+            },
+            "location" : {
+               "lat" : 37.4051042,
+               "lng" : -122.1037599
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 37.4064987302915,
+                  "lng" : -122.1025153697085
+               },
+               "southwest" : {
+                  "lat" : 37.4038007697085,
+                  "lng" : -122.1052133302915
+               }
+            }
+         },
+         "place_id" : "ChIJ3_5vlKGwj4AR3qoKpnXsmvk",
+         "types" : [ "premise" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "West Middlefield Road",
+               "short_name" : "W Middlefield Rd",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Mountain View",
+               "short_name" : "Mountain View",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Santa Clara County",
+               "short_name" : "Santa Clara County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "California",
+               "short_name" : "CA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "94043",
+               "short_name" : "94043",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "W Middlefield Rd, Mountain View, CA 94043, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 37.3990957,
+                  "lng" : -122.0709094
+               },
+               "southwest" : {
+                  "lat" : 37.3987165,
+                  "lng" : -122.0713538
+               }
+            },
+            "location" : {
+               "lat" : 37.3989094,
+               "lng" : -122.0711831
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 37.4002550802915,
+                  "lng" : -122.0697826197085
+               },
+               "southwest" : {
+                  "lat" : 37.3975571197085,
+                  "lng" : -122.0724805802915
+               }
+            }
+         },
+         "place_id" : "ChIJg8SwFTi3j4ARs_4ez-oJN2g",
+         "types" : [ "establishment", "point_of_interest", "premise" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "s",
+               "short_name" : "s",
+               "types" : [ "premise" ]
+            },
+            {
+               "long_name" : "119",
+               "short_name" : "119",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "South Main Street",
+               "short_name" : "S Main St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Enterprise",
+               "short_name" : "Enterprise",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Coffee County",
+               "short_name" : "Coffee County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Alabama",
+               "short_name" : "AL",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "36330",
+               "short_name" : "36330",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "2542",
+               "short_name" : "2542",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "s, 119 S Main St, Enterprise, AL 36330, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 31.3140935,
+                  "lng" : -85.853121
+               },
+               "southwest" : {
+                  "lat" : 31.3138905,
+                  "lng" : -85.85340699999999
+               }
+            },
+            "location" : {
+               "lat" : 31.3139483,
+               "lng" : -85.8533219
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 31.3153409802915,
+                  "lng" : -85.85191501970849
+               },
+               "southwest" : {
+                  "lat" : 31.3126430197085,
+                  "lng" : -85.85461298029151
+               }
+            }
+         },
+         "place_id" : "ChIJS-l0uyFskogRISgwAlIn8kM",
+         "types" : [ "premise" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "855",
+               "short_name" : "855",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "North Park Road",
+               "short_name" : "N Park Rd",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Wyomissing",
+               "short_name" : "Wyomissing",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Berks County",
+               "short_name" : "Berks County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Pennsylvania",
+               "short_name" : "PA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "19610",
+               "short_name" : "19610",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "855 N Park Rd, Wyomissing, PA 19610, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.3475609,
+                  "lng" : -75.95497949999999
+               },
+               "southwest" : {
+                  "lat" : 40.3472718,
+                  "lng" : -75.9552812
+               }
+            },
+            "location" : {
+               "lat" : 40.34744209999999,
+               "lng" : -75.955169
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.3487653302915,
+                  "lng" : -75.95378136970849
+               },
+               "southwest" : {
+                  "lat" : 40.3460673697085,
+                  "lng" : -75.95647933029151
+               }
+            }
+         },
+         "place_id" : "ChIJAYh0qNF2xokRbZzLPG4BdnQ",
+         "types" : [ "establishment", "point_of_interest", "premise" ]
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<style>
+	<!--
+	.red
+	{
+		color: #ff0000;
+		font-weight: bold;
+		font-style: italic;
+	}
+	a
+	{
+		color: #0000ff;
+		font-weight: normal;
+		font-style: normal;
+	}
+	-->
+	</style>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		function appendItem()
+		{
+			$("#list").append("<option>Item 3</option>");
+		}
+		function prependItem()
+		{
+			$("#list").prepend("<option>Item 0</option>");
+		}
+	</script>
+</head>
+<body>
+<br>
+<br><br>
+<br><br>
+<form id="frm1">
+Items : <select id="list">
+<option>Item 1</option>
+<option>Item 2</option>
+</select>
+<input type="button" name="btnAppend" id="btnAppend" onclick="appendItem()" value="Append"/>
+<input type="button" name="btnPrepend" id="btnPrepend" onclick="prependItem()" value="Prepend"/>
+</form>
+</body>
+</html>

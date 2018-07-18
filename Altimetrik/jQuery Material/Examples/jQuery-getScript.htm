@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+				$("#btn1").bind("click",function(event){
+					$.getScript("getScriptDemo.js",function(tmp){
+					     greetUser();
+					});
+				});
+		});
+	</script>
+</head>
+<body>
+<br>
+<div id="div1" style="width:300px;background-color:aqua;padding:5px;margin:2px;font-family:calibri;border:5px;border-style:solid">
+</div>
+<form id="frm1" name="frm1">
+<input type="button" value="Get Data" id="btn1" name="btn1">
+</form>
+<br><br>
+</body>
+</html>

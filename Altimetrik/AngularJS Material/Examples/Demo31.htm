@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services - demo</title>
+<script src="angular.min.js"></script>
+<script src="app24.js"></script>
+</head>
+<body ng-app="myApp">
+<h3>Services Demo</h3>
+<div ng-controller="peopleController">
+	
+	<div ng-repeat="person in people">
+	{{person.name}} was born in the year {{person.yearborn}}
+	</div>
+<br/>
+	<button ng-click="addYearBorn()">Add Year Born</button>
+	
+</div>
+	
+</body>
+</html>

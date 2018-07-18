@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$.get("tmpContent.htm",function(data,txtStatus)
+			{
+				alert("Completed, with the status : " + txtStatus + ". The response is " + data);
+				$("#div1").html(data.childNodes[0].textContent);
+			});
+		});
+	</script>
+</head>
+<body id="docBody">
+<br><br>
+<div id="div1" style="color:#ff0000;font-family:Arial;background-color:#001155;width:200px;height:100px">
+</div>
+<br><br>
+<br><br>
+<br><br>
+</body>
+</html>

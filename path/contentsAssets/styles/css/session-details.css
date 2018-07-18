@@ -1,0 +1,43 @@
+.session-syn-banner {
+  background: linear-gradient(to bottom, #fff 0%, #f6f6f6 49%, #ededed 76%, #ededed 99%); }
+
+.sessiondetails .row .custom {
+  background: linear-gradient(to bottom, #fff 0%, #f6f6f6 23%, #ededed 36%, #ededed 53%); }
+
+.inlineblock {
+  display: inline-block; }
+
+.sessionbody {
+  padding: 20px;
+  background-color: white; }
+
+.sessionbody h5 {
+  color: #B40E00; }
+
+table th {
+  padding: 10px;
+  text-align: center; }
+
+table td {
+  text-align: center; }
+
+.btncentered {
+  text-align: center; }
+
+.pagenum {
+  float: right; }
+
+.vcenter {
+  position: relative;
+  top: 10px; }
+
+.total_session {
+  color: #2c7b19; }
+
+.attendees {
+  color: #0d64a3; }
+
+.sync {
+  color: #B40E00; }
+
+/*# sourceMappingURL=session-details.css.map */

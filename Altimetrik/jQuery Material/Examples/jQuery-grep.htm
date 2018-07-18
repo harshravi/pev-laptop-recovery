@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+				var nums = '1,2,3,4,5,6,7,8,9,10'.split(','); 
+				nums = $.grep(nums, function(num, index) { 
+				// num = the current value for the item in the array 
+				// index = the index of the item in the array 
+				return num > 5; // returns a boolean 
+			}); 
+			$("#div1").html("The array elements greater than 5 are " + nums.toString());
+
+				var nums = '1,2,3,4,5,6,7,8,9,10'.split(','); 
+				nums = $.grep(nums, function(num, index) { 
+				// num = the current value for the item in the array 
+				// index = the index of the item in the array 
+				return num > 5; // returns a boolean 
+			},true);       // invert set to true
+
+			$("#div1").html($("#div1").html() + " <br><br>The array elements lower or equal to 5 are " + nums.toString());
+		});
+	</script>
+</head>
+<body>
+<br>
+<div id="div1" style="width:150px;background-color:aqua;padding:5px;margin:2px;font-family:calibri;border:5px;border-style:solid">
+</div>
+<br><br>
+</body>
+</html>

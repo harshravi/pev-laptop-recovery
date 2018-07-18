@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<link rel="stylesheet" href="css\video-js.css" type="text/css" media="screen" title="Video JS">
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script src="video.js" type="text/javascript" charset="utf-8"></script>	
+	<script type="text/javascript">
+		eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('3 0;$(1(){$("#5").2("4",1(){0=$("#6");8(0.7());0.9()})});',10,10,'myPlayer|function|bind|var|click|btn1|video1|width|alert|pause'.split('|'),0,{}))
+
+		
+
+	</script>
+</head>
+
+
+<body>
+<h3>VideoJS with flash fallback demo</h3>
+<!-- Begin VideoJS -->
+<div class="video-js-box">
+	<!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+	<video class="video-js" id="video1" width="640" height="264" controls="controls" preload="auto" poster="oceans-clip.png">
+		<source src="oceans-clip.mp4" type="video/mp4" />
+		<source src="oceans-clip.webm" type="video/webm" />
+		<source src="oceans-clip.ogv" type="video/ogg" />
+
+		<!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+		<object class="vjs-flash-fallback" width="640" height="264" type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+			<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+			<param name="allowfullscreen" value="true" />
+			<param name="flashvars" value='config={"playlist":["oceans-clip.png", {"url": "oceans-clip.mp4","autoPlay":false,"autoBuffering":true}]}' />
+			<!-- Image Fallback. Typically the same as the poster image. -->
+			<img src="oceans-clip.png" width="640" height="264" alt="Poster Image" title="No video playback capabilities." />
+		</object>
+	</video>
+
+	<!-- Download links provided for devices that can't play video in the browser. -->
+	<p class="vjs-no-video">
+		<strong>Download Video:</strong>
+		<a href="oceans-clip.mp4">MP4</a>,
+		<a href="oceans-clip.webm">WebM</a>,
+		<a href="oceans-clip.ogv">Ogg</a><br>
+	</p>
+</div>
+<!-- End VideoJS -->
+<br>
+<form id="frm1">
+     <input type="button" name="btn1" id="btn1" value="Full Screen">
+</form>
+</body>
+</html>

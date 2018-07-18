@@ -1,0 +1,32 @@
+<html ng-app="myApp">
+<head>
+<title>Isolated Scope - demo</title>
+<script src="angular.min.js"></script>
+<script src="app9-A.js"></script>
+<style>
+h2 {
+    cursor: pointer;
+}
+.directive {
+    border: 5px solid #F5BF6E;;
+    padding: 10px;
+}
+p
+{
+font-weight:bold;
+font-family:Calibri;
+}
+</style>
+</head>
+<body>
+<div>
+    
+    <div ng-controller="Ctrl1">
+        <h2 ng-click="reverseName()">Hey {{name}}, Click me to reverse your name</h2>
+        <p>Scope:False - Directive uses the parent scope</p><div my-directive class='directive'></div>
+		<p>Scope:True - Directive gets the parent scope</p><div my-second-directive class='directive'></div>
+		<p>Scope:{} - Directive gets a new isolated scope</p><div my-third-directive class='directive'></div>
+		</div>
+</div>
+</body>
+</html>

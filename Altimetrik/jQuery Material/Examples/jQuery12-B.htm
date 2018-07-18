@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<style>
+	<!--
+	.red
+	{
+		color: #ff0000;
+		font-weight: bold;
+		font-style: italic;
+	}
+	a
+	{
+		color: #0000ff;
+		font-weight: normal;
+		font-style: normal;
+	}
+	-->
+	</style>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		function changeClass(src)
+		{
+			alert($(src).css("color"));
+			$(src).toggleClass("red");
+		}
+		$(function() {
+		 	$("#div1").width(500);
+			$("#div1").height(75);
+			$("#div1").width($(document).width()-30);
+		});
+
+		function getDimensions()
+		{
+			alert($("#div1").width());
+		}
+		function changeDiv()
+		{
+		   	$("#div1").width($(document).width()-30);
+		}
+	</script>
+</head>
+<body onresize="changeDiv()">
+<br>
+<a href="#" id="link1" onmouseover="changeClass(this)" onmouseout="changeClass(this)">Products</a> | 
+<a href="#" id="link2" onmouseover="changeClass(this)" onmouseout="changeClass(this)">Services</a> | 
+<a href="#" id="link3" onmouseover="changeClass(this)" onmouseout="changeClass(this)">About Us</a> | 
+<a href="#" id="link4" onmouseover="changeClass(this)" onmouseout="changeClass(this)">Contact</a>
+
+<br><br>
+<h3>Add and Remove Classes</h3>
+<div id="div1" style="padding:8px;background-color:aqua;position:absolute" onclick="getDimensions()">
+jQuery thoughtfully provides convenience commands to access the width and height properties
+</div>
+<br><br>
+</body>
+</html>

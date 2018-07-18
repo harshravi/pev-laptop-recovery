@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Built-in directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app14.js"></script>
+</head>
+<body>
+<h3>Built-in directives Demo</h3>
+<form>
+	<input type="text" ng-model="userName" placeholder="lakshman">
+	<div ng-switch on="userName">
+		<div ng-switch-when="lakshman">
+			<h3>Hello {{userName}}! Welcome back.</h3>
+		</div>
+		<div ng-switch-default>
+			<h3>Hi {{userName}}! Please register!</h3>
+		</div>
+	</div>
+</form>
+</body>
+</html>

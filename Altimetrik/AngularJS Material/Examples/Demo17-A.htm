@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Isolated Scope - demo</title>
+<script src="angular.min.js"></script>
+<script src="app10-A.js"></script>
+<style>
+.parent {
+    border: 20px solid #676767;
+    padding : 20px;
+}
+.parent,.directive {
+    position: relative;
+}
+.parent:after,.directive:after {
+    display: inline;
+    color: #fff;
+    font-size: normal;
+    position: absolute;
+    top:-20px;
+    left:-20px;
+    z-index: 100;
+    padding: 1px 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+.parent:after {
+    content: "MainCtrl Scope";
+}
+.directive {
+    padding: 20px;
+    border: 20px solid #cbccdd;
+    margin-top: 20px;
+}
+.directive:after {
+    content: "Directive Scope"
+}
+.line {
+    border-bottom: 1px dotted #ccc;
+    padding: 5px 0;
+}
+</style>
+</head>
+<body>
+<div>
+    
+    <div class="parent" ng-controller="MainCtrl">
+        <div class="line">
+            Name inside parent scope is: <strong>{{name}}</strong>  
+            <input type="button" ng-click="reverseName()" value="Reverse name" />
+        </div> 
+        <div class="line">
+            Color inside parent scope is: <strong style="color:{{color}}">{{color|uppercase}}</strong>  
+            <input type="button" ng-click="randomColor()" value="Randomize color" />
+        </div>
+        <div class="directive" my-directive
+            name="{{name}}"
+            color="color"
+            reverse="reverseName()"
+        ></div>
+    </div>
+</div>
+</body>
+</html>

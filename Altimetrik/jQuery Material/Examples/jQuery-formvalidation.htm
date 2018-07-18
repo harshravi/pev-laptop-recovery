@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<style>
+	   span{
+	     color:red
+	}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="jquery.form.js"></script>
+	<script type="text/javascript" src="jquery.validate.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+
+			$("#frm1").validate({
+				rules: {
+				         txtName:"required",
+				         txtEmail:{
+					required:true,
+					email:true
+					},
+				         txtURL:{
+					url:true
+					},
+				         txtnotes:{
+					required:true
+					}
+				               },
+				   messages: {
+				           txtName: "Please enter your name",
+				           txtEmail: "Please enter an email address",
+				           txtURL: "Please enter a valid URL",
+				           txtnotes: "Please enter some notes"
+				}
+				
+			});
+
+		});
+	</script>
+</head>
+<body id="docBody" style="width:50%">
+<form id="frm1">
+Name : <span><input type="text" name="txtName" id="txtName" maxlength="25"></span> <br/>
+Email : <span><input type="text" name="txtEmail" id="txtEmail" maxlength="35"></span> <br/>
+URL : <span><input type="text" name="txtURL" id="txtURL" maxlength="25"></span> <br/>
+Notes : <span><textarea name="txtnotes" id="txtnotes" rows="5" cols="15"></textarea></span><br/>
+<input type="submit" id="btn1" name="btn1" value="Submit">
+</form>
+</body>
+</html>

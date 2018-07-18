@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			if($.boxModel)
+			{
+			       $("#div1").text("Your browser subscribes to the W3C box model!");
+			}
+			else
+			        $("#div1").text("Your browser subscribes to the traditional box model!")
+		});
+	</script>
+</head>
+<body>
+<br>
+<div id="div1" style="width:150px;background-color:aqua;padding:5px;margin:2px;font-family:calibri;border:5px;border-style:solid">
+</div>
+<br><br>
+</body>
+</html>

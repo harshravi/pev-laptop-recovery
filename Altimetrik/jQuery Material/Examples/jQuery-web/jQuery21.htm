@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		function getTemp(src)
+		{
+			$(src).val("Please wait...");
+			$("#imgProgress").show();
+			$(src).attr("disabled","disabled");
+			$.get("Temperature.asp?city=" + $("#txtCity").val(), function(data,txtStatus)
+			{
+				$(src).val("Get Current Temperature");
+				$("#imgProgress").hide();
+				$(src).removeAttr("disabled");
+				$("#dispTemp").html("Current temperature in " + $("#txtCity").val() + " is " + data);
+			});
+		}
+	</script>
+</head>
+<body id="docBody">
+<br><br>
+<form id="frm1">
+Enter City : <input type="text" name="txtCity" id="txtCity" maxlength="20">
+<img src="ajax-loader.gif" id="imgProgress" style="display:none">
+<input type="button" id="btn1" value="Get Current Temperature" onclick="getTemp(this)">
+</form>
+<div id="dispTemp" style="font-family:calibri;background-color:aqua;width:500px;height:20px">
+</div>
+<br><br>
+<br><br>
+</body>
+</html>

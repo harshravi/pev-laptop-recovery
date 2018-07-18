@@ -1,0 +1,56 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Tooltip </title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.10.3.custom.css">
+	<style>
+	body {
+	     font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+	     
+	}
+	.myClass
+	{
+	    font-family: "Calibri";
+ 	    font-size: 90%;
+	    background:#000;
+	    color: #fff;
+	    padding:10px;
+	    border-color: #ff0000;
+	    border-style: "solid";
+	}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script>
+  $(function() {
+
+         // $(document).tooltip();
+
+          $("#currUser").tooltip({
+	show : {
+	             effect: "slideDown",
+	             delay: 250,
+	            },
+	tooltipClass: "myClass",
+	track:true,
+          });     
+
+        $("#newUser").tooltip();
+
+  });
+  </script>
+</head>
+<body>
+
+Tooltips can be extremely useful and can be associated with any element in the document!
+ <p></p>
+<form>
+  <label for="newUser">New User : </label><input type="text" name="newUser" id="newUser" title="Please choose a desired user-id. Note you will not be able to change it later!"/><input type="button" value="Go"/><br/><br/>
+  <label for="currUser">Existing User : </label><input type="text" name="currUser" id="currUser" title="Please provide your user-id to proceed"/><input type="button" value="Go" id="btnGo"/>
+
+</form>
+
+</body>
+</html>

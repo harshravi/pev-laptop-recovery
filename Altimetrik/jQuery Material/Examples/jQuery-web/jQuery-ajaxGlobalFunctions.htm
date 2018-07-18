@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+
+		$(function() {
+
+			$.ajaxSetup({
+			       type:"GET",
+			       timeout:5000,
+			       datatype:"html",
+			       error: function(xhr,txtStatus,errorThrown){
+		  	           $("#div1").html(txtStatus);
+			       }
+			});
+
+			$("#divSuccess").ajaxSuccess(function(data){
+			         $(data.target).append("Request successful at " + new Date());
+			         $(data.target).show();
+			});	
+	
+			$("#divError").ajaxError(function(data,xhr){
+			          $(data.target).append("Request failed at " + new Date());
+			          $(data.target).append("Status : " + xhr.status + "   "+ xhr.statusText);
+			          $(data.target).show();
+			});		
+
+			$("#btn1").bind("click",function(evt){
+				    $.ajax({
+				         url:"tmpContent.htm",
+				         success: function(data, txtStatus, xhr){
+				                  $("#div1").html(data);
+				                  $("#div1").show();
+				         }
+				});
+				});
+		});
+	</script>
+</head>
+<body>
+<br>
+<div id="div1" style="width:300px;background-color:aqua;padding:5px;margin:2px;font-family:calibri;border:5px;border-style:solid;display:none">
+</div>
+<div id="divSuccess" style="width:300px;background-color:green;padding:5px;margin:2px;font-family:calibri;border:5px;border-style:solid;color:yellow;display:none">
+</div>
+<div id="divError" style="width:300px;background-color:red;padding:5px;margin:2px;font-family:calibri;border:5px;border-style:solid;display:none">
+</div>
+<form id="frm1" name="frm1">
+<input type="button" value="Get Data" id="btn1" name="btn1">
+</form>
+
+<br><br>
+</body>
+</html>

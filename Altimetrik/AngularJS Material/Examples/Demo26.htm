@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Built-in directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app19.js"></script>
+</head>
+<body>
+<h3>Built-in directives Demo</h3>
+<div ng-controller="formController">
+	<form>
+		Name : <input type="text" id="txtName" name="txtName" ng-model="myForm.name" 
+			ng-minlength="6" ng-maxlength="15"> (Name should be atleast 6 characters long and less than 15 characters)<br/>
+		Pincode : <input type="text" id="txtPin" name="txtPin" ng-model="myForm.pin" 
+			ng-pattern="/^\d{6}$/"> (Pincode should contain 6 digits) <br/>
+	</form>
+	<div>
+	Welcome {{ myForm.name }} !! Your pincode is {{ myForm.pin }}
+	
+	</div>
+</div>
+</body>
+</html>

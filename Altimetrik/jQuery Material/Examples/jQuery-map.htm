@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+				var nums = '1,2,3,4,5'.split(','); 
+				nums = $.map(nums, function(num, index) { 
+				// num = the current value for the item in the array 
+				// index = the index of the item in the array 
+				return (num * num) ; // returns a squared value 
+			}); 
+
+				$("#div1").html("The squared elements of the array are " + nums.toString());
+
+				var divs = document.getElementsByTagName("div");
+				divArr = $.makeArray(divs);
+				$("#div2").html("The div elements on the document are " + divArr.length);
+		});
+	</script>
+</head>
+<body>
+<br>
+<div id="div1" style="width:150px;background-color:aqua;padding:5px;margin:2px;font-family:calibri;border:5px;border-style:solid"></div>
+<div id="div2" style="width:150px;background-color:yellow;padding:5px;margin:2px;font-family:calibri;border:5px;border-style:solid"></div>
+<br><br>
+</body>
+</html>

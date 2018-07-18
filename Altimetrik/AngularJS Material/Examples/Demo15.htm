@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Directives - demo</title>
+<style>
+#marker
+{
+	background-color:aqua;
+	font-family:Consolas;
+}
+#dMarker
+{
+	background-color:#aabbcc;
+	color:#ff0000;
+	font-family:Calibri;
+}
+</style>
+<script src="angular.min.js"></script>
+<script src="app8.js"></script>
+<script src="datetime1.js"></script>
+</head>
+<body>
+<div ng-controller="directiveController">
+	<h3>Directives</h3>
+		<date-time></date-time>
+	</div>
+	<div id="marker" date-time></div>
+	<div class="date-time" id="dMarker"></div>
+	</body>
+</html>

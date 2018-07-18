@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Filter - filter demo</title>
+<script src="angular.min.js"></script>
+<script src="app6.js"></script>
+</head>
+<body>
+<div ng-controller="filterController">
+	<h3>filter Filters</h3>
+	<p>Companies containing "A" {{ companies | filter :'A' }}
+	<p>People from "Bangalore" {{ people | filter : {'city' : 'Bangalore'} }}
+	<p>Names longer than six letters  {{ ['Robertson','Smith','Amitabh','Badri','Lakshman'] | filter : isLongerThanSix }}
+</div>
+
+
+</body>
+</html>

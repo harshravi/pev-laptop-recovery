@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Simple first app</title>
+    <script src="angular.min.js"></script>
+    <script src="app2.js"></script>
+
+</head>
+
+<body ng-app="app">
+   <div ng-controller="emp">
+       <div>
+           value of a is {{a}},
+           but you can change
+           <input type="text" ng-model="a" value=""><br>
+
+           value of b is {{b}}
+           but you can change
+           <input type="text" ng-model="b"><br>
+       </div>
+       sum = {{sum}} <br>
+       <button ng-click="doSum()"> calculate</button>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="jquery.form.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+
+		     $("#btn1").bind("click",function(){
+			$("#frm1").ajaxSubmit({
+				         url:"tmpContent.htm",
+				         type:"GET",
+				         datatype:"html",
+				         timeout:3000,
+				         success: function(data, txtStatus, xhr){
+					$("#divAjax").html(data)
+					}
+			});
+		     });
+
+		});
+	</script>
+</head>
+<body id="docBody" style="width:50%">
+<form id="frm1">
+Please enter your name : <input type="text" name="txtName" id="txtName" maxlength="25"> <br/>
+Select City : <select name="selCity" id="selCity">
+<option value="blr">Bangalore</option>
+<option value="maa">Chennai</option>
+<option value="del">Delhi</option>
+<option value="bom">Mumbai</option>
+<option value="ccu">Kolkata</option>
+</select><br/>
+Passengers : &#160; Adults : <input type="checkbox" name="chkadt" id="chkadt" value="adult">&#160;&#160;&#160;
+Children : <input type="checkbox" name="chkchi" id="chkchi" value="children"> <br>
+Class of Travel : &#160; Executive : <input type="radio" name="rdcls" id="rdexe" value="exec">&#160;&#160;&#160;
+Economy : <input type="radio" name="chkcls" id="chkeco" value="eco"> <br/>
+Notes : <textarea name="txtnotes" id="txtnotes" rows="5" cols="15"></textarea><br/>
+<input type="button" id="btn1" name="btn1" value="Submit">
+</form>
+<div id="divAjax" style="color:red;background-color:yellow;width:800px;height:50px">Results : </div>
+</body>
+</html>

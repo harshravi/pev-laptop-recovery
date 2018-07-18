@@ -1,0 +1,89 @@
+input[type=text], input[type=password] {
+  padding: 10px 10px 10px 45px;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 345px; }
+
+body {
+  background-image: url("../../img/login_bg.jpg");
+  background-size: cover;
+  height: 100%; }
+
+html {
+  height: 100%; }
+
+.vertical-center {
+  min-height: 100vh;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.head {
+  height: 130px;
+  border-bottom: 2px solid #bf2e1a;
+  background: 70px 20px url("../../img/login_logo.png");
+  background-repeat: no-repeat;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 78px; }
+  .head span:nth-of-type(2) {
+    color: #231f20; }
+  .head span:first-of-type {
+    color: #bf2e1a; }
+
+.form {
+  padding: 20px;
+  text-align: left; }
+
+.container {
+  background-color: #ffffff;
+  max-width: 400px;
+  height: 390px;
+  border-radius: 5px;
+  padding: 0; }
+
+td {
+  padding: 5px; }
+
+.username {
+  background: 10px url("../../img/user_icon.png");
+  background-repeat: no-repeat; }
+
+.password {
+  background: 10px url("../../img/password_icon.png");
+  background-repeat: no-repeat; }
+
+input[type=button] {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  width: 170px;
+  color: #ffffff;
+  float: left; }
+
+.btn-sign {
+  background: #4c4c4c;
+  margin-right: 5px; }
+
+.btn-login {
+  background: #bf2e1a; }
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 100px; }
+
+a {
+  color: #454545;
+  text-decoration: underline; }
+
+/*# sourceMappingURL=login.css.map */

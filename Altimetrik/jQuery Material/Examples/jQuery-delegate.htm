@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+				$("table").delegate("tr","click",function(event){
+          				     $(this).parent().append("<tr><td>UserName</td><td>UserEmail</td></tr>");
+      				});
+		});
+	</script>
+   	<style>
+     		 div{ margin:10px;padding:12px;
+             		   border:2px solid #666;
+             		   width:160px;
+          		 }
+  </style>
+</head>
+<body id="docBody">
+   <div id="div1" style="background-color:aqua;">
+             <table id="tab1" border="1">
+    	<tr>
+        	    <th>Name</th>
+        	    <th>Email</th>
+    	</tr>
+</table>
+  </div>
+
+
+<br><br>
+
+<br><br>
+</body>
+</html>

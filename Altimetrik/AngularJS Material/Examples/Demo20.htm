@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Built-in directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app13.js"></script>
+</head>
+<body>
+<h3>Built-in directives Demo</h3>
+<div ng-controller="directiveController">
+<p>Hi {{message}}! </p>
+</div>
+<div ng-include src="'./myFile.htm'" ng-controller="directiveController1">
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+				$("div").toggle(function(event){
+          				     $(event.target).css("text-transform","uppercase");
+      				},
+				function(event){
+				    $(event.target).css("text-transform","capitalize");
+ 				});
+				
+				$("div").hover(function(event){
+				       $(event.target).css("color","red");
+				},
+				function(event){
+				        $(event.target).css("color","#000000");
+				});
+
+				$("div").css("text-transform","capitalize");
+		});
+	</script>
+   	<style>
+     		 div{ margin:10px;padding:12px;
+             		   border:2px solid #666;
+             		   width:160px;
+          		 }
+  </style>
+</head>
+<body id="docBody">
+<p>Click on the box to see the effect:</p>
+   <div id="div1" style="background-color:aqua;">
+      Office Mobile will debut in the form of free apps that allow Android and iOS users to view Microsoft Office documents on the move.       
+  </div>
+<br><br>
+
+<br><br>
+</body>
+</html>

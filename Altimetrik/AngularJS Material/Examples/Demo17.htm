@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Isolated Scope - demo</title>
+<script src="angular.min.js"></script>
+<script src="app10.js"></script>
+<script src="picture.js"></script>
+</head>
+<body>
+<h3>Isolated Scope Demo</h3>
+<div ng-controller="directiveController">
+	<p>{{ rootProperty }}</p>
+	<div my-picture my-url="sunshine.jpg" my-caption="Sunshine" picture-width="{{width}}" picture-height="{{height}}"></div>
+</div>
+</body>
+</html>

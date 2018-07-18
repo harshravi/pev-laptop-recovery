@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="jQuery.myPlugin.js"></script>
+	<script type="text/javascript">
+		
+		$.fn.colour_it_red = function(){
+		    return this.each(function() {
+		              this.style.color="red";
+		       });
+		};
+
+		$(function(){
+
+		     $("#txtName").colour_it_red();
+		
+		     $("#btn1").bind("click",function(){
+			$.myPlugin.greeting();
+			$.myPlugin.greetUser($("#txtName").val());
+			
+		     });
+
+		});
+	</script>
+</head>
+<body id="docBody" style="width:50%">
+<form id="frm1">
+Please enter your name : <input type="text" name="txtName" id="txtName" maxlength="25"> &#160;&#160;&#160;
+<input type="button" id="btn1" name="btn1" value="Custom Function 1">
+</form>
+</body>
+</html>

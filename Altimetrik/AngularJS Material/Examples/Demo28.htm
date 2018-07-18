@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Custom form validation - demo</title>
+<script src="angular.min.js"></script>
+<script src="app21.js"></script>
+</head>
+<body>
+<h3>Custom form validation Demo</h3>
+	<div ng-controller="myController">
+		<form name="discForm">
+			Price of item 1 : <input type="text" ng-model="priceA" required ng-change="chkVal()"><br/>
+			Price of item 2 : <input type="text" ng-model="priceB" required ng-change="chkVal()"><br/>
+			<span ng-show="!discount">Discount will be offered if total product value exceeds 500 </span>
+		</form>
+	</div>
+	
+</body>
+</html>

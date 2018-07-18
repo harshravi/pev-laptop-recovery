@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Built-in directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app11.js"></script>
+</head>
+<body>
+<h3>Built-in directives Demo</h3>
+<div ng-controller="directiveController">
+	<form>
+		Name : <input type="text" ng-model="myName" placeholder="Please enter name"/><br/>
+		Password : <input type="text" ng-model="myPassword" placeholder="Please enter password"/><br/>
+		Confirm Password : <input type="text" ng-readonly="!myPassword" placeholder="Confirm password"/><br/>
+		Use my address : <input type="checkbox" ng-model="myAddress"><br/>
+		<select>
+			<option>New Address</option>
+			<option ng-selected="myAddress">My address</option>
+		</select><br/>
+		Agree to terms : <input type="checkbox" ng-model="chkProperty" ng-checked="myName"><br/>
+		<button ng-model="button" ng-disabled="!myName">Button</button>
+		
+	</form>
+</div>
+</body>
+</html>

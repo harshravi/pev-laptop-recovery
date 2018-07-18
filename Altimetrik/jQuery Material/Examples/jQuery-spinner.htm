@@ -1,0 +1,52 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Spinner </title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.10.3.custom.css">
+	<style>
+	body {
+	     font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+	     
+	}
+	
+	</style>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script>
+  $(function() {
+
+	$("#age").spinner({
+		min:1,
+		max:100,
+		step:1
+	});
+
+	$("#btnGet").bind("click",function(){
+		alert("The current value is " + $("#age").spinner("value"));
+	});
+
+	$("#donate").spinner({
+		min:10,
+		max:50,
+		step:0.5,
+	});
+        
+  });
+  </script>
+</head>
+<body>
+
+Spinners can be extremely useful!
+ <p></p>
+<form>
+  <label for="age">Enter age : </label><input type="text" name="age" id="age" /><br/><br/>
+  <input type="button" name="btnGet" id="btnGet" value="Read Age">
+  <br/><br/>
+  <label for="donate">Specify the amount you wish to donate : </label><input type="text" name="donate" id="donate"/>
+
+</form>
+
+</body>
+</html>

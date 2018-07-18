@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="prototype.js"></script>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script>var $j = jQuery.noConflict();</script>
+	
+	<script type="text/javascript">
+		$j(function(){
+			$j("#btn").bind("click",function()
+			{
+				var tmpText = "          Hello jQuery World            ";
+ 				alert("Text before trim() '" + tmpText + "'");
+				alert("Text after trim() '"  + $j.trim(tmpText) + "'");
+
+				$j.each(['Apple','Banana','Cherry','Date'], function(idx,val){
+				    alert("Fruit " + idx + " is  " + val);
+				});
+
+				var myArr = ['A','B','C','D','E'];
+				if($j.inArray('B',myArr)!==-1)
+				{
+				    alert("'B' is present in the array!");
+				}
+			});
+
+		});
+	</script>
+</head>
+<body id="docBody">
+<form name="frm1" id="frm1">
+<input type="button" id="btn" name="btn" value="No Conflict">
+</form>
+<br><br>.
+
+</body>
+</html>

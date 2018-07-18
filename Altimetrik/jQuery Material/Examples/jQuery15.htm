@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<style>
+	<!--
+	.red
+	{
+		color: #ff0000;
+		font-weight: bold;
+		font-style: italic;
+	}
+	a
+	{
+		color: #0000ff;
+		font-weight: normal;
+		font-style: normal;
+	}
+	-->
+	</style>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		function fnEmpty()
+		{
+			$("#div1").empty();
+		}
+		function fnRemove()
+		{
+			$("#div1").remove();
+		}
+	</script>
+</head>
+<body id="docBody">
+<br><br>
+<h4>An example of remove and Empty</h4>
+<div id="div1" style="color:#ff0000;font-family:Arial;background-color:#001155;width:200px;height:100px">
+Text in the span tag!<b>Content in bold</b>
+</div>
+<br><br>
+<form id="frm1">
+<input type="button" name="btnRemove" id="btnRemove" onclick="fnRemove()" value="Remove"/>
+<input type="button" name="btnEmpty" id="btnEmpty" onclick="fnEmpty()" value="Empty"/>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Simple data binding app</title>
+<script src="angular.min.js">
+</script>
+</head>
+<body ng-app ng-init="city='Singapore'">
+<p>City of residence - <span ng-bind="city"></span> </p>
+<p>Please enter your current city </p>
+<form>
+<input ng-model="city" type="text" placeholder="Current city...">
+
+</form>
+</body>
+</html>

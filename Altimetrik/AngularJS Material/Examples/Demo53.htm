@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src="angular.min.js"></script>
+<script src="ui-bootstrap-tpls-0.11.0.min.js"></script>
+<script src="app45.js"></script>
+<meta charset=utf-8 />
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+<style>
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+</style>
+<title>ui-bootstrap example</title>
+</head>
+<body>
+<h3>ui-bootstrap - Carousel demo</h3>
+<div ng-controller="carouselController">
+<div style="height:400px;width:30%">
+	<carousel interval="defInterval">
+		<slide ng-repeat="slide in mySlides" active="slide.active">
+			<img src="{{slide.image}}" style="margin:auto">
+			<div class="carousel-caption">
+				<p>{{slide.text}}</p>
+			</div>
+		</slide>
+	</carousel>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#div1").text("Hello jquery World (using #id)!!");
+			$(".bold").css("font-weight","bold")
+			$("a").css("color","#ff0000");
+			$("span.bold").css("color","#00ff00");
+		});
+	</script>
+</head>
+<body>
+<div id="div1"></div>
+<p class="bold">jQuery rocks!</p>
+<p>Here is a normal paragraph</p>
+<span class="bold">Classes can be used in jQuery!</span>
+<br>
+<a href="#">First</a> | 
+<a href="#">Second</a> | 
+<a href="#">Third</a>
+</body>
+</html>

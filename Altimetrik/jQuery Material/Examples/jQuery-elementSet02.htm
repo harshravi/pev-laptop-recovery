@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".cssList").find("li #css1").prepend("Click for ");
+			alert($("*").is("ul"));
+			alert($("#para1").is("p"));
+			$(".cssList").find("li").end().append("<li>jQuery</li>");
+			//var nodeList = $("p").contains("Hello");
+			//alert(nodeList);
+			
+		});
+	</script>
+</head>
+<body>
+<br>
+<h4>Element Sets</h4>
+<ul class="cssList">
+     <li><a href="CSS1" id="css1">CSS 1</a></li>
+     <li><a href="CSS2" id="css2">CSS 2</a></li>
+     <li><a href="CSS2.1">CSS 2.1</a></li>
+</ul>
+<p id="para1">Hello World</p>
+<p id="para2">jQuery World</p>
+<p id="para3">Brave New World</p>
+</body>
+</html>

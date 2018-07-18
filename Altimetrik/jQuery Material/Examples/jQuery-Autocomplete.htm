@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.8.21.custom.css">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var companiesList = [
+				"Apple",
+				"BP",
+				"Chevron",
+				"Daimler AG",
+				"Exxon Mobil",
+				"General Motors",
+				"Google",
+				"HP",
+				"Honda",
+				"IBM",
+				"LG",
+				"Samsung",
+				"Sony",
+				"Toyota"
+			];			
+
+			$("#txtCompany").autocomplete({
+				source: companiesList
+			});	
+		});
+	</script>
+</head>
+<body id="docBody">
+<div class="ui-widget">
+<form id="frm1">
+    Company to work for : <input type="text" name="txtCompany" id="txtCompany">
+</form>
+</div>
+</body>
+</html>

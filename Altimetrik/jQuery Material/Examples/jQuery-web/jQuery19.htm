@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<!--<script type="text/javascript" src="jquery.cookie.js"></script>-->
+	<script type="text/javascript">
+	
+	/** Cookie related functions */
+	 function setCookie(name,value,days) {
+	    if (days) {
+	        var date = new Date();
+	        date.setTime(date.getTime()+(days*24*60*60*1000));
+	        var expires = "; expires="+date.toGMTString();
+	    }
+	    else var expires = "";
+	    document.cookie = name+"="+value+expires+"; path=/";
+	}
+
+	function getCookie(name) {
+	    var nameEQ = name + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0;i < ca.length;i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	    }
+	    return null;
+	}
+
+	function deleteCookie(name) {
+    	setCookie(name,"",-1);
+	}
+		
+	 
+	 /**
+	  * End of cookie functionality
+	  */
+	
+	
+		function makeRequest()
+		{
+			setCookie("city","LA",1);
+			//alert(getCookie("name"));
+			
+			
+			$.get("tmpContent.htm",function(data,txtStatus)
+			{
+				alert("Completed, with the status : " + txtStatus + ". The response is " + data);
+				$("#div1").html(data);
+			});
+
+			$.post("testpost.asp",
+			{
+				name:$("#txtName").val(),
+				age:$("#txtAge").val()
+			}, 
+			function(data,txtStatus)
+			{
+				alert(txtStatus);
+				$("#div2").html("Completed, the server returned " + data);
+			});
+			deleteCookie("city");
+		}
+	</script>
+</head>
+<body id="docBody">
+<br><br>
+<div id="div1" style="color:#ff0000;font-family:Arial;background-color:#001155;width:200px;height:100px">
+</div>
+<br><br>
+<br><br>
+<div id="div2" style="background-color:#aabbcc;height:100px;width:150px">
+</div>
+<form id="frm">
+Name : <input type="text" name="txtName" id="txtName" maxlength="25"/><br>
+Age : <input type="text" name="txtAge" id="txtAge" maxlength="3"/><br>
+<input type="button" onClick="makeRequest()" value="Send Data"/>
+</form>
+<br><br>
+</body>
+</html>

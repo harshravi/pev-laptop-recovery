@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Filter - demo</title>
+<script src="angular.min.js"></script>
+<script src="app7.js"></script>
+</head>
+<body>
+<div ng-controller="filterController">
+	<h3>Custom Filters</h3>
+		Temperature : <input type="text" ng-model="temp" ng-init="temp=25" id="txtTemp">
+		<p>The temperature is a pleasant {{ 25 | toFahrenheit }} </p>
+		<p>The temperature is a pleasant {{ temp | toFahrenheit }} </p>
+	</div>
+	</body>
+</html>

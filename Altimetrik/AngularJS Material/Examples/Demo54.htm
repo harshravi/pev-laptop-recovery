@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src="angular.min.js"></script>
+<script src="ui-bootstrap-tpls-0.11.0.min.js"></script>
+<script src="app46.js"></script>
+<meta charset=utf-8 />
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+<style>
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+</style>
+<title>ui-bootstrap example</title>
+</head>
+<body>
+<h3>ui-bootstrap - Progressbar demo</h3>
+<div ng-controller="progressController">
+	<div style="width:40%"><progressbar value="40"></progressbar></div>
+	<div style="width:40%"><progressbar class="progress-striped" value="35" type="success">35%</progressbar></div>
+	<div style="width:40%"><progressbar class="progress-striped active" value="85" type="danger">85%</progressbar></div>
+	<!--the value property of the progressbar directive cannot be an expression {{}} since it employs isolated scope - two way binding-->
+	<div style="width:40%"><progressbar class="progress-striped active" value="value" type="{{type}}">{{value}}%</progressbar></div>
+</div>
+
+</body>
+</html>

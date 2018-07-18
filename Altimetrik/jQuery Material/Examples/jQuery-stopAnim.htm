@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+	function show(){
+			$("#div1").fadeIn("fast");
+			$("#div2").fadeIn(6000);
+			$("#div3").fadeTo(5000,0.4);
+	}
+	function stop()
+	{
+		$("#div2").stop();
+		$("#div3").stop();
+	}
+	</script>
+</head>
+<body>
+<br>
+<div id="div1" style="display:none;background-color:#aabbcc;width:200px;">
+This is text in the div!
+<u>Underlined text</u>
+<b>This is some text in bold</b>
+<tt>Tele type text</tt>
+</div>
+<br>
+<div id="div2" style="display:none;background-color:aqua;width:200px">
+This is the second div!!
+</div>
+<div id="div3" style="background-color:yellow;width:200px">
+This is a div that will toggle between visible and invisible modes!
+</div>
+<br><br>
+<form id="frm1">
+<input type="button" name="btnShow" id="btnShow" value="Show" onclick="show()"/>
+<input type="button" name="btnStop" id="btnStop" value="Stop" onclick="stop()"/>
+</form>
+</body>
+</html>

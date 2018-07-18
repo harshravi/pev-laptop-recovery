@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src="angular.min.js"></script>
+<script src="ui-utils.min.js"></script>
+<script src="app42.js"></script>
+<meta charset=utf-8 />
+<title>ui-utils example</title>
+</head>
+<body>
+<h3>format - demo</h3>
+<div ng-controller="formatController">
+	Current Location : <div ng-model="userlocation">
+		{{ "Are you on the $0, $1, or $2 floor?" | format:tokens}}
+		<br/>
+		{{"Phil is currently employed by :employer and located at :location " | format :employment}}
+		</div>
+</div>
+
+</body>
+</html>

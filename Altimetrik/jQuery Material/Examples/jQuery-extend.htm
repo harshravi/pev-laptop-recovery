@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+				var a = {foo: 1, bar: 1};
+				var b = {foo: 2, baz: 2};
+				var c = {foo: 3};
+				var r = jQuery.extend(a,b,c)
+				$("#div1").html("A: Foo=" + a.foo + " Bar=" + a.bar + " Baz=" + a.baz);
+				$("#div1").append("<br>B: Foo=" + b.foo + " Bar=" + b.bar + " Baz=" + b.baz);
+				$("#div1").append("<br>C: Foo=" + c.foo + " Bar=" + c.bar + " Baz=" + c.baz);
+				$("#div1").append("<br>R: Foo=" + r.foo + " Bar=" + r.bar + " Baz=" + r.baz);
+		});
+	</script>
+</head>
+<body>
+<br>
+<div id="div1" style="width:300px;background-color:aqua;padding:5px;margin:2px;font-family:calibri;border:5px;border-style:solid"></div>
+<br><br>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Built-in directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app18.js"></script>
+<style>
+input.ng-invalid{
+	border: 1px solid red;
+	box-shadow: 2px 1px 5px #ff0000;
+}
+input.ng-valid{
+	border: 1px solid green;
+	box-shadow: 2px 1px 5px #00ff00;
+}
+span.alert{
+	font-family:calibri;
+	font-size:10pt;
+	color:#ff0000;
+}
+</style>
+</head>
+<body>
+<h3>Built-in directives Demo</h3>
+<h4>Non-Dynamic form</h4>
+<form name="regForm1" ng-controller="formController" ng-submit="submitForm()">
+	<div ng-repeat="myfield in fields" >
+		<input type="text" name="dynamic_input" ng-required="myfield.isRequired" 
+				ng-model="myfield.name" placeholder="{{myfield.placeholder}}"/>
+			<span class="alert" ng-show="regForm1.$invalid">  Please provide data</span>
+	</div>
+	<button type="submit" ng-disabled="regForm1.$invalid">Submit</button>
+</form>
+
+<hr>
+
+<h4>Dynamically created form</h4>
+<form name="regForm2" ng-controller="formController" ng-submit="submitForm()">
+	<div ng-form="regForm2_input" ng-repeat="myfield in fields" >
+		<input type="text" name="dynamic_input" ng-required="myfield.isRequired" 
+				ng-model="myfield.name" placeholder="{{myfield.placeholder}}"/>
+			<span class="alert" ng-show="regForm2_input.$invalid">  Please provide data</span>
+	</div>
+	<button type="submit" ng-disabled="regForm2.$invalid">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Built-in directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app20.js"></script>
+</head>
+<body>
+<h3>Built-in directives Demo</h3>
+<div ng-controller="myController">
+	<form name="myForm1" novalidate>
+	<!--   novalidate is added to disable the built-in HTML5 browser validation    -->
+		Name : <input type="text" id="txtName" name="txtName" ng-model="myForm.name" 
+			ng-minlength="6" ng-maxlength="15"> <span ng-show="myForm1.txtName.$invalid">(Name should be atleast 6 characters long and less than 15 characters)</span><br/>
+		Pincode : <input type="text" id="txtPin" name="txtPin" ng-model="myForm.pin" 
+			ng-pattern="/^\d{6}$/"> <span ng-show="myForm1.txtPin.$invalid">(Pincode should contain 6 digits)</span> <br/>
+				<button ng-click="submitForm(myForm1)">Submit</button>
+	</form>
+</div>
+			
+	
+</body>
+</html>

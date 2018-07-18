@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src="angular.min.js"></script>
+<script src="ui-bootstrap-tpls-0.11.0.min.js"></script>
+<script src="app44.js"></script>
+<meta charset=utf-8 />
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+<style>
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+</style>
+<title>ui-bootstrap example</title>
+</head>
+<body>
+<h3>ui-bootstrap - Button demo</h3>
+<div ng-controller="buttonController" style="width:50%">
+	<h4>Toggle - current state : {{togModel}}</h4>
+	<button type="button" class="btn btn-primary" ng-model="togModel" 
+		btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+	  Toggle Button 
+	</button>
+	<br/>
+	<br/>
+	
+	<h4>Checkbox</h4>
+	<div class="btn-group">
+		<label class="btn btn-primary" ng-model="chkModel.left" btn-checkbox>Bangalore</label>
+		<label class="btn btn-primary" ng-model="chkModel.center" btn-checkbox>Chennai</label>
+		<label class="btn btn-primary" ng-model="chkModel.right" btn-checkbox>Mumbai</label>
+	</div>
+	<br/>
+	<p>Hello Bootstrap World! {{chkModel}}</p>
+	
+	<h4>Radio Button</h4>
+	<div class="btn-group">
+		<label class="btn btn-primary" ng-model="cityModel" btn-radio="'BLR'">Bengaluru</label>
+		<label class="btn btn-primary" ng-model="cityModel" btn-radio="'BOM'">Mumbai</label>
+		<label class="btn btn-primary" ng-model="cityModel" btn-radio="'DEL'">Delhi</label>
+	</div>
+	<br/>
+	<p>Current city of residence is {{cityModel}}</p>
+</div>
+
+</body>
+</html>

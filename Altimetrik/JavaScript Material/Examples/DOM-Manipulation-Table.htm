@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>DOM - Dynamic Content</title>
+<script type="text/javascript">
+
+var newTable, tmpTableRow, tmpTableData, tmpTextNode;
+
+function addNode()
+{
+    newTable = document.createElement("table");
+    for(i=0;i<4;i++)
+    {
+      tmpTableRow = document.createElement("tr");
+      for(j=0;j<2;j++)
+       {
+          tmpTableData = document.createElement("td");
+	  tmpTextNode = document.createTextNode("Item" + j);
+          tmpTableData.appendChild(tmpTextNode);
+	  tmpTableRow.appendChild(tmpTableData);
+       }
+      newTable.appendChild(tmpTableRow);
+    }
+    
+    var bodyRef = document.getElementsByTagName("body");
+    bodyRef[0].appendChild(newTable);
+    newTable.setAttribute("border","1");
+}
+
+</script>
+</head>
+
+<body>
+<h2>Dynamic Content with DOM</h2>
+<p id="para1">This example illustrates node manipulation using DOM!!!
+	<b id="bold1">Document Object Model Level 2</b>
+</p>
+<form>
+<p name="para"><input type="button" value="Add Table" onclick="addNode()"></p>
+</form>
+
+</body>
+
+</html>
+

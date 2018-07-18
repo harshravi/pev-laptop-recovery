@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<style>
+	<!--
+	.red
+	{
+		color: #ff0000;
+		font-weight: bold;
+		font-style: italic;
+	}
+	a
+	{
+		color: #0000ff;
+		font-weight: normal;
+		font-style: normal;
+	}
+	-->
+	</style>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		function addDiv()
+		{
+			var tmpDiv = "<div style='padding:4px;background-color:aqua;float:left;'></div>";
+			$("a").wrap(tmpDiv);
+			$("#link4").wrapInner("<b></b>");
+		}
+
+	</script>
+</head>
+<body onclick="addDiv()">
+<br>
+<a href="#" id="link1">Products</a>
+<a href="#" id="link2">Services</a> 
+<a href="#" id="link3">About Us</a> 
+<a href="#" id="link4">Contact</a>
+
+<br><br>
+<br><br>
+
+</body>
+</html>

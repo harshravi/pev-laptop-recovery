@@ -1,0 +1,111 @@
+<HTML>
+<head>
+<title>TypeDown Library</title>
+<script type="text/javascript">
+<!--
+/*   TYPEDOWN (begin main) */
+
+/*   TYPEDOWN (begin define objects) */
+
+function optionprops() {
+    this.o_value=new Array();
+    this.o_text=new Array();
+    }
+
+var options=new Array();
+
+/*   TYPEDOWN (end define objects) */
+
+/*   TYPEDOWN (begin init select) */
+
+function InitSelectVals(s) {
+    options[s.name]=new optionprops();
+    for(i=0;i<s.length;i++) {
+        options[s.name].o_value[i]=s.options[i].value;
+        options[s.name].o_text[i]=s.options[i].text;
+        }
+    }
+
+/*   TYPEDOWN (begin init global selects) */
+function InitSelects() {
+    for(f=0;f<document.forms.length;f++) {
+        for(e=0;e<document.forms[f].length;e++) {
+            if(document.forms[f].elements[e].name
+            && document.forms[f].elements[e].type.indexOf('select')>-1) {
+                InitSelectVals(document.forms[f].elements[e]);
+                }
+            }
+        }
+    }
+/*   TYPEDOWN (end init global selects) */
+
+/*   TYPEDOWN (end initialize objects) */
+
+/*   TYPEDOWN (begin typedown) */
+
+function TypeDown(s,t) {
+   var y=0;                                     
+   var suggestions=new optionprops();           
+   for(m=0;m<options[s.name].o_text.length;m++) {
+      if(options[s.name].o_text[m].toLowerCase().indexOf(t.value.toLowerCase())>-1) {
+         suggestions.o_text[y]=options[s.name].o_text[m];
+         suggestions.o_value[y]=options[s.name].o_value[m];
+         y++;                                              
+         }
+      }
+   s.length=suggestions.o_text.length;                     
+   for(i=0;i<suggestions.o_text.length;i++) {           
+      s.options[i].text=suggestions.o_text[i];
+      s.options[i].value=suggestions.o_value[i];      
+      }
+   s.selectedIndex=0;                                      
+   }
+
+/*   TYPEDOWN (end typedown) */
+
+
+/*   TYPEDOWN (end main) */
+-->
+</script>
+</head>
+<BODY onload="InitSelects()">
+<h2>Type down Library Example</h2>
+<FORM name="eg2">
+<p>Typedown 1
+<input type='text' 
+   onKeyUp="TypeDown(this.form.example_1,this)" /><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="example_1" size='5'>
+   <option value="1">One
+   <option value="2">Two
+   <option value="3">Three
+   <option value="4">Four
+   <option value="5">Five
+   <option value="6">Six      
+   <option value="7">Seven
+   <option value="8">Eight
+   <option value="9">Nine
+   <option value="10">Ten      
+</select>
+
+<!--<p>Typedown 2
+<input type='text' 
+   onKeyUp="TypeDown(this.form.example_2,this)" /><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="example_2" size='5'>
+   <option value="1">One
+   <option value="2">Two
+   <option value="3">Three
+   <option value="4">Four
+   <option value="5">Five
+   <option value="6">Six      
+   <option value="7">Seven
+   <option value="8">Eight
+   <option value="9">Nine
+   <option value="10">Ten      
+</select>
+-->
+</FORM>
+</BODY>
+</HTML>
+

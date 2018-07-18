@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Simple first app</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style type="text/css">
+        .highlight {
+            background-color: yellow;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .emergency {
+            border: 1px solid red;
+            color: red;
+            display: inline-block;
+            margin-right: 10px;
+            padding: 4px 10px 3px 10px;
+        }
+    </style>
+</head>
+
+<body ng-app="app">
+    <div ng-controller="msg">
+        <!--<div message text="first">
+            <div message text="..second">
+                <div message text="...third">
+
+                </div>
+            </div>
+        </div>-->
+        <div message text="{{i}}" ng-repeat="i in [1,2,3,4,5]">
+            {{i}}
+        </div>
+        <!--<span ng-repeat="word in [ 'Word', 'to', 'your', 'mother' ]" bn-highlight>
+
+            {{ word }}
+            <div message text="..second">
+                <div message text="...third">
+
+                </div>
+            </div>
+        </span>-->
+    </div>
+
+    <!--<div ng-controller="msg">
+        <message-in text="first" info="customer1">
+            
+        </message-in>
+        <hr>
+        <message-in text="second" info="customer2"></message-in>
+    </div>-->
+</body>
+
+</html>

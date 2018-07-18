@@ -1,0 +1,11 @@
+<div>
+	<h3>Core Management Team</h3>
+</div>
+<div>
+<div ng-controller="sidebarController">
+<ul>
+	<li ng-repeat="person in team"><a ng-click="getPage(person)" href="#">{{ person }} </a></li>
+</ul>
+</div>
+<div ui-view></div>
+</div>

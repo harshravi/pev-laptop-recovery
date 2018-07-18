@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Built-in directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app15.js"></script>
+</head>
+<body>
+<h3>Built-in directives Demo</h3>
+
+<ul ng-controller="companiesController">
+	<li ng-repeat="company in companies">
+	{{company.name}} was established in {{company.established}}
+	</li>
+</ul>
+
+</body>
+</html>

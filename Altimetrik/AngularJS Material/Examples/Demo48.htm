@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src="angular.min.js"></script>
+<script src="ui-utils.min.js"></script>
+<script src="app40.js"></script>
+<meta charset=utf-8 />
+<title>ui-utils example</title>
+</head>
+<body>
+<h3>mask - demo</h3>
+
+<form>
+	<label>Credit card number : </label><input name="ccardNum" ui-mask="9999 9999 9999 9999" ng-model="user.ccard"/><br/>
+	<label>Phone number : </label><input name="phone" ui-mask="(999) 999-99999999" ng-model="user.phone"/><br/>
+	<label>UserCode : </label><input name="usercode" ui-mask="AAA-**9-999" ng-model="user.usercode"/><br/> 
+</form>
+
+
+</body>
+</html>

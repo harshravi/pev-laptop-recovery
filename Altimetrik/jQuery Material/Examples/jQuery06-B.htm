@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("li:has(a)").css("color","#ff0000");
+		});
+	</script>
+</head>
+<body>
+<br>
+<h4>Container Selectors</h4>
+<pre>
+$("li:has(a)").css("color","#ff0000");
+</pre><br><br>
+<ul class="cssList">
+  <li><a href="http://www.w3.org/css">CSS</a>
+   <ul>
+     <li><a href="CSS1">CSS 1</a></li>
+     <li><a href="CSS2">CSS 2</a></li>
+     <li><a href="CSS2.1">CSS 2.1</a></li>
+   </ul>
+  </li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			if(($.browser.msie) && ($.browser.version<9))
+			{
+			       $("#div1").text("Your browser does not support native audio playback!");
+			}
+			else
+			        $("#div1").text("Awesome! Your browser supports native audio playback!")
+		});
+	</script>
+</head>
+<body>
+<br>
+<div id="div1" style="width:150px;background-color:aqua;padding:5px;margin:2px;font-family:calibri">
+</div>
+<br><br>
+</body>
+</html>

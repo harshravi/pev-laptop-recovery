@@ -1,0 +1,176 @@
+@import "variables.scss";
+
+.wrapper{
+  width: 100%;
+}
+
+.header {
+  height: 80px;
+  border-top: 4px solid $theme-highlight-bgColor;
+  border-bottom: 1px solid grey;
+  float: left;
+  width: 100%;
+  background:$theme-nav-fontColor;	
+
+  div{
+    display: inline-block;
+  }
+
+  .logo{
+    width: 180px;
+    height: 75px;
+    padding-top: 10px;
+    float: left;
+    padding-left: 14px;
+    cursor: pointer;
+  }
+
+  .logedUser{
+    .profilePic{
+      width: 75px;
+      height: 78px;
+      float: left;
+      padding-left: 3px;
+    }
+
+    .profileName{
+      width: 149px;
+      height: 76px;
+      float: left;
+
+      p:first-child {
+          font-size: 15px;
+          margin: 18px 0px 0px 10px;
+          letter-spacing: 0.5px;
+          line-height: 19px;
+      }
+    }
+
+    p.logedUserName{
+      color: $theme-logedUserName-fontColor;
+      padding-left: 9px;
+      font-size: 16px;
+    }
+
+    .locationStatus {
+      height: 80%;
+      margin-top: 8px;
+      background-image: url("#{$image-path}/top_pointing_arrow.png");
+      background-repeat: no-repeat;
+      float: left;
+      padding-left: 24px;
+
+      .locationAlign{
+        color: $theme-highlight-bgColor;
+        width: 57px;
+        padding-top: 12px;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+
+      .locationItem {
+        width: 90px;
+        margin-left: 23px;
+        padding-top: 8px;
+        line-height: 21px;
+
+        .locationBlock{
+          font-size: 17px;
+        }
+
+        .locationBlockName{
+          font-size: 16px;
+        }
+      }     
+    }
+
+    .editUser{
+      background-image: url("#{$image-path}/edit_top_icon.png");
+      width: 18px;
+      height: 18px;
+      margin-top: 30px;
+      margin-left: 27px;
+      cursor: pointer;
+    }
+  }
+
+  .headerOptionButton {
+    margin-top: 25px;
+    float: right;
+
+    .optionButtons{
+      width: 56px;
+      height: 40px;
+      cursor: pointer;
+
+      img {
+        margin-top: 8px;
+        margin-left: 19px;
+      }
+    }
+  }
+}
+
+.bodycontent{
+  float:left;
+
+  .nav{
+    padding: 0px;
+    width: 13.5%;
+    display: inline-block;
+    float: left;
+    background-color: $theme-nav-bgColor;
+    height: 100%;
+
+    >li.active>a, 
+    >li.active>a:focus, 
+    >li.active>a:hover {
+      background-color: $theme-highlight-bgColor;
+    }
+
+    >li>a {
+      position: relative;
+      float: left;
+      padding: 12px 13px 9px 17px;
+    }
+
+    >li>a:focus, >li>a:hover {
+      text-decoration: none;
+      background-color: $theme-navhover-bgColor;
+    }
+
+    >li+li{
+      margin-top: 0px;
+      float: left;
+    }
+
+    span.menuIcon {
+      width: 68%;
+      height: 43px;
+      margin-left: 56px;
+      margin-top: 6px;
+      margin-bottom: 2px;
+      float: left;
+    }
+
+    span.menuText {
+      font-size: 17px;
+      width: 100%;
+      float: left;
+      text-align: center;
+      color: $theme-nav-fontColor;
+    }
+  }
+
+  .page{
+    padding: 0px;
+    width: 86.5%;
+    display: inline-block;
+    float: left;
+
+    .sessiondetails .row {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+  }
+}

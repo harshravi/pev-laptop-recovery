@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services - demo</title>
+<script src="angular.min.js"></script>
+<script src="app26.js"></script>
+</head>
+<body ng-app="myApp">
+<h3>Services - Demo</h3>
+
+<h2>{{people}}</h2>
+<br/>
+
+
+<h3>Please provide the following details</h3>
+<div ng-controller="inputController">
+
+	<div>
+		First Name : <input type="text" ng-model="user.Firstname"/><br/>
+		Last Name : <input type="text" ng-model="user.Lastname"/><br/>
+		Date of Birth : <input type="date" ng-model="user.DOB"/><br/>
+	</div>
+<br/>
+</div>
+<div ng-controller="displayController">
+
+	<div>
+		<h3>Please verify the details you entered</h3>
+		<p>First Name : <strong>{{user.Firstname}}</strong></p>
+		<p>Last Name : <strong>{{user.Lastname}}</strong></p>
+		<p>Date of Birth : <strong>{{user.DOB}}</strong></p>
+	</div>
+
+</div>
+	
+</body>
+</html>

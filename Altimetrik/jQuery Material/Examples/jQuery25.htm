@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.8.21.custom.css">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//$("#myDialog").dialog();
+			var dialogOpts = {
+				buttons: {
+					"Ok" : function(){
+						$(this).dialog("close");
+						location.href="http://cdsweb.cern.ch/journal/CERNBulletin/2012/28/News%20Articles/1459454?ln=en";
+					},
+					"Cancel" : function(){
+						$(this).dialog("close");
+					}
+				}, modal:true,
+				//a built-in effect that is applied to the opening and closing of the dialog
+				show:true, hide:true
+			};
+			$("#myDialog").dialog(dialogOpts);
+		});
+	</script>
+</head>
+<body id="docBody">
+<div id="myDialog" title="CERN FAQs">
+Why have we tried so hard to find the Higgs particle? How does the Higgs mechanism work? What is the difference in physics between strong evidence and a discovery? Why do physicists speak in terms of "sigmas"?
+Do you want to know more?
+</div>
+<div id="release" style="font-family:Calibri;width:90%;background-color:aqua;border:solid">
+All the fundamental particles making up matter - the electron, the quarks, etc. - have masses. Moreover, quantum physics requires that forces are also carried by particles. The W and Z particles that carry the weak force responsible for radioactivity must also have masses, whereas the photon, the carrier of the electromagnetic force, has no mass at all. This is the root of the "Higgs problem": how to give masses to the fundamental particles and break the symmetry between the massive W and Z and the massless photon? Just assigning masses by hand leads to an inconsistent theory and nonsensical predictions. Nature must therefore have a way of correcting this inconsistency, and the mechanism proposed by Englert, Brout and Higgs could be the answer.
+</div>
+</body>
+</html>

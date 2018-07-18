@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Filter demo</title>
+<script src="angular.min.js"></script>
+<script src="app4.js"></script>
+</head>
+<body>
+<div ng-controller="countryController">
+	<p>MS is offering {{ 650 | currency }} for trading the iPad air for surface 3</p>
+	<p>Nokia launches feature phones at {{ 1500 | currency :"&#8377" }}</p>
+</div>
+
+</body>
+</html>

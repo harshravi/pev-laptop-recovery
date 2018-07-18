@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation - demo</title>
+<script src="angular.min.js"></script>
+<script src="angular-animate.min.js"></script>
+<script src="app35.js"></script>
+<link rel="stylesheet" type="text/css" href="animations.css"/>
+</head>
+
+<body ng-app="myApp">
+<h3>Animation - Demo</h3>
+
+<br/>
+
+<div ng-init="companies=['Apple','Bosch','Caterpillar','Dell','Electronic Arts','Fujitsu','Google','Hughes','Inventive']">
+  <input placeholder="Filter Repeat Items..." ng-model="f" /> 
+  <div ng-repeat="company in companies | filter:f" class="repeat-animation">
+    {{ company }}
+  </div>
+</div>
+
+
+</div>
+</body>
+</html>

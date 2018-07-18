@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events - demo</title>
+<script src="angular.min.js"></script>
+<script src="app34.js"></script>
+<style>
+body{
+	font-family:Consolas;
+	font-weight:bold;
+	font-size:15pt;
+}
+</style>
+</head>
+
+<body ng-app="myApp">
+<h3>Events - Demo</h3>
+
+<br/>
+
+
+
+<div ng-controller="myController" style="background-color:aqua">
+
+<p>Parent Scope {{counter}}</p>
+
+
+
+<div ng-controller="myController" style="background-color:orange;width:95%">
+	<button ng-click="$emit('myEvent')">Emit</button><br/>
+	<button ng-click="$broadcast('myEvent')">Broadcast</button><br/>
+	<p>Middle scope {{counter}}</p>
+	
+	<div ng-controller="myController" style="background-color:yellow;width:90%">
+	<p>Leaf scope {{counter}}</p>
+	<div>
+	
+</div>
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app23.js"></script>
+</head>
+<body ng-app="myApp">
+<h3>Directives Demo</h3>
+<div ng-controller="peopleController">
+	<my-directive>
+		<my-second-directive>
+			<my-third-directive>{{message}}</my-third-directive>
+		</my-second-directive>
+	</my-directive>
+	<br/><br/>
+	
+	<!-- Here the directive gets compiled only once but is linked thrice-->
+	<div ng-repeat="i in [1,2,3]">
+		<my-directive>This is a demo of {{i}} {{message}}</my-directive>
+	</div>
+</div>
+	
+</body>
+</html>

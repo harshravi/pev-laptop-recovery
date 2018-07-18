@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Built-in directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app16.js"></script>
+</head>
+<body>
+<h3>Built-in directives Demo</h3>
+<div ng-controller="evalNumber">
+<form>
+	<input type="text" ng-model="myNumber"><br/>
+	<br/>
+</form>
+<div ng-show="isEven(myNumber)">
+	<h3>The number is even </h3>
+</div>
+<div ng-show="!isEven(myNumber)">
+	<h3>The number is odd</h3>
+</div>
+</div>
+</body>
+</html>

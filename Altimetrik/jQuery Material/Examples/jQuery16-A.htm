@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("div").bind("click",function()
+			{
+				alert($(this).text());
+				$("div").unbind("mousemove");
+			});
+			$("#div2").bind("mousemove", function(evt){
+				$(this).text(evt.pageX + "," + evt.pageY);
+			});
+		});
+	</script>
+</head>
+<body id="docBody">
+<br><br>
+<div id="div1" style="color:#ff0000;font-family:Arial;background-color:#001155;width:200px;height:100px">
+Text in the span tag!<b>Content in bold</b>
+</div>
+<br><br>
+<div id="div2" style="background-color:#aabbcc;width:150px;height:100px">
+This is the second div!
+</div>
+<br><br>
+</body>
+</html>

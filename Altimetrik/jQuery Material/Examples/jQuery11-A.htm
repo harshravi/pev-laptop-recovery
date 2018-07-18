@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			alert("href : " + $("#link1").attr("href"));
+			$("#link1").attr("href","http://www.bing.com");
+			"Value : " + $("#txtName").removeAttr("value");
+		});
+	</script>
+</head>
+<body>
+<br>
+<a href="#" id="link1">Search</a>
+<br><br>
+<form id="frm1">
+Name : <input type="text" name="txtName" id="txtName" value="Name"/>
+</form>
+<br><br>
+</body>
+</html>

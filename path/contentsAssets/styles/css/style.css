@@ -1,0 +1,123 @@
+.wrapper {
+  width: 100%; }
+
+.header {
+  height: 80px;
+  border-top: 4px solid #B40E00;
+  border-bottom: 1px solid grey;
+  float: left;
+  width: 100%;
+  background: #ffffff; }
+  .header div {
+    display: inline-block; }
+  .header .logo {
+    width: 180px;
+    height: 75px;
+    padding-top: 10px;
+    float: left;
+    padding-left: 14px;
+    cursor: pointer; }
+  .header .logedUser .profilePic {
+    width: 75px;
+    height: 78px;
+    float: left;
+    padding-left: 3px; }
+  .header .logedUser .profileName {
+    width: 149px;
+    height: 76px;
+    float: left; }
+    .header .logedUser .profileName p:first-child {
+      font-size: 15px;
+      margin: 18px 0px 0px 10px;
+      letter-spacing: 0.5px;
+      line-height: 19px; }
+  .header .logedUser p.logedUserName {
+    color: #001FFF;
+    padding-left: 9px;
+    font-size: 16px; }
+  .header .logedUser .locationStatus {
+    height: 80%;
+    margin-top: 8px;
+    background-image: url("../../img/top_pointing_arrow.png");
+    background-repeat: no-repeat;
+    float: left;
+    padding-left: 24px; }
+    .header .logedUser .locationStatus .locationAlign {
+      color: #B40E00;
+      width: 57px;
+      padding-top: 12px;
+      text-align: center;
+      letter-spacing: 1px; }
+    .header .logedUser .locationStatus .locationItem {
+      width: 90px;
+      margin-left: 23px;
+      padding-top: 8px;
+      line-height: 21px; }
+      .header .logedUser .locationStatus .locationItem .locationBlock {
+        font-size: 17px; }
+      .header .logedUser .locationStatus .locationItem .locationBlockName {
+        font-size: 16px; }
+  .header .logedUser .editUser {
+    background-image: url("../../img/edit_top_icon.png");
+    width: 18px;
+    height: 18px;
+    margin-top: 30px;
+    margin-left: 27px;
+    cursor: pointer; }
+  .header .headerOptionButton {
+    margin-top: 25px;
+    float: right; }
+    .header .headerOptionButton .optionButtons {
+      width: 56px;
+      height: 40px;
+      cursor: pointer; }
+      .header .headerOptionButton .optionButtons img {
+        margin-top: 8px;
+        margin-left: 19px; }
+
+.bodycontent {
+  float: left; }
+  .bodycontent .nav {
+    padding: 0px;
+    width: 13.5%;
+    display: inline-block;
+    float: left;
+    background-color: #333333;
+    height: 100%; }
+    .bodycontent .nav > li.active > a,
+    .bodycontent .nav > li.active > a:focus,
+    .bodycontent .nav > li.active > a:hover {
+      background-color: #B40E00; }
+    .bodycontent .nav > li > a {
+      position: relative;
+      float: left;
+      padding: 12px 13px 9px 17px; }
+    .bodycontent .nav > li > a:focus, .bodycontent .nav > li > a:hover {
+      text-decoration: none;
+      background-color: #222222; }
+    .bodycontent .nav > li + li {
+      margin-top: 0px;
+      float: left; }
+    .bodycontent .nav span.menuIcon {
+      width: 68%;
+      height: 43px;
+      margin-left: 56px;
+      margin-top: 6px;
+      margin-bottom: 2px;
+      float: left; }
+    .bodycontent .nav span.menuText {
+      font-size: 17px;
+      width: 100%;
+      float: left;
+      text-align: center;
+      color: #ffffff; }
+  .bodycontent .page {
+    padding: 0px;
+    width: 86.5%;
+    display: inline-block;
+    float: left; }
+    .bodycontent .page .sessiondetails .row {
+      margin-right: 0px;
+      margin-left: 0px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src="angular.min.js"></script>
+<script src="ui-bootstrap-tpls-0.11.0.min.js"></script>
+<script src="app43.js"></script>
+<meta charset=utf-8 />
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+<style>
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+</style>
+<title>ui-bootstrap example</title>
+</head>
+<body>
+<h3>ui-bootstrap - Alert demo</h3>
+<div ng-controller="alertController" style="width:50%">
+	<alert ng-repeat="alert in alertMsgs" type="{{alert.type}}" close="closeAlert($index)">
+	{{alert.msg}}
+	</alert>
+	<button ng-click='addAlert()' class='btn btn-default'>Check ZipCode</button>
+</div>
+
+</body>
+</html>

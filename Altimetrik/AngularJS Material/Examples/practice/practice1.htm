@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Controller demo</title>
+<script src="../angular.min.js"></script>
+<script src="app1.js"></script>
+</head>
+<body>
+<div ng-controller="pOneController">
+	<ul>
+	  <li ng-repeat="friend in friends track by name | startsWithA">
+		{{ friend }}
+	  </li>
+	</ul>
+</div>
+
+</body>
+</html>

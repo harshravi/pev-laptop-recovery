@@ -1,0 +1,23 @@
+<html lang="en" href="#">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("[href]").css("font-size","18");
+			$("[class='bold']").css("background-color","#aabbcc");
+			$("[href='#']").css("font-style","italic");
+			$("[href!='#']").css("font-family","Forte");
+		});
+	</script>
+</head>
+<body href="#">
+<p class="bold" href="#">jQuery rocks!</p>
+<p href="#">Here is a normal paragraph</p>
+<span class="bold" href="#">Classes can be used in jQuery!</span>
+<br>
+<a href="#" class="link">First</a> | 
+<a href="#" class="link">Third</a> | 
+<a href="http://www.jquery.com" class="link">Third</a>
+</body>
+</html>

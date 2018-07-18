@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+
+		jQuery.greeting = function() {
+		   alert("This is a custom function");
+		};
+
+		jQuery.greetUser = function(name) {
+		    alert("Hey " + name + "! This is a jQuery plug-in");
+		};		
+
+		$(function(){		
+		     $("#btn1").bind("click",function(){
+			jQuery.greeting();
+			//$.greeting();
+			jQuery.greetUser($("#txtName").val());
+			
+		     });
+
+		});
+	</script>
+</head>
+<body id="docBody" style="width:50%">
+<form id="frm1">
+Please enter your name : <input type="text" name="txtName" id="txtName" maxlength="25"> &#160;&#160;&#160;
+<input type="button" id="btn1" name="btn1" value="Custom Function 1">
+</form>
+</body>
+</html>

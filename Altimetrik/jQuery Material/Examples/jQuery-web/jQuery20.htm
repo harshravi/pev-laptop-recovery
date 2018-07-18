@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#div1").load("servedContent.htm", function(responseText,status,xhr){
+				if(status=="success"){
+					alert("Content loaded successfully");
+					$("#div2").text("Content Length retrieved from the response header is " + xhr.getResponseHeader("Content-Length"));
+					$("#div2").text($("#div2").text() + ".  Date retrieved from the response header is " + xhr.getResponseHeader("Date"));
+					$("#div1").html(responseText);
+				}
+				if(status=="error")
+					alert("Error encountered " + xhr.status + "   " + xhr.statusText);
+			});
+		});
+	</script>
+</head>
+<body id="docBody">
+<br><br>
+<div id="div1" style="color:#ff0000;font-family:Arial;background-color:#001155;width:200px;height:100px">
+</div>
+<br><br>
+<div id="div2" style="background-color:#aabbcc;width:250px;height:150px">
+</div>
+<br><br>
+<br><br>
+</body>
+</html>

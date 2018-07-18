@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(":text").css("color","#0000ff");
+			$(":checkbox:checked").css("margin-left","50px");
+			$(":enabled#address").css("font-family","Forte");
+		});
+	</script>
+</head>
+<body>
+<br>
+<h4>Custom Selectors</h4>
+<pre>
+$(":text").css("color","#0000ff");
+$(":checkbox:checked").css("margin-left","50px");
+$(":enabled#address").css("font-family","Forte");
+</pre><br><br>
+<form>
+First Name : <input type="text" name="fname" id="fname" maxlength="15"><br/>
+Last Name : <input type="text" name"lname" id="lname" maxlength="15"><br/>
+Address : &#160;&#160;&#160;&#160;<textarea name="address" id="address" rows="10" cols="15"></textarea><br/>
+Agree to terms <input type="checkbox" id="chkterms" name="chkterms" value="agree" CHECKED><br/>
+<input type="submit" name="btnsubmit" id="btnsubmit" value="Submit">
+&#160;&#160;
+<input type="reset" name="btnreset" id="btnreset" value="Clear">
+</form>
+
+</body>
+</html>

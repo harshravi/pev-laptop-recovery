@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Nested Controller demo</title>
+<script src="angular.min.js"></script>
+<script src="app4.js"></script>
+</head>
+<body>
+<div ng-controller="countryController">
+	<p>I am a resident of {{ location.country | uppercase}}</p>
+	<div ng-controller="stateController">
+		<p>I am a resident of {{ location.state }} in {{ location.country | uppercase }}</p>
+		<div ng-controller="cityController">
+			<p>I am a resident of {{ location.city }} in {{ location.state }} in {{ location.country | uppercase}}</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

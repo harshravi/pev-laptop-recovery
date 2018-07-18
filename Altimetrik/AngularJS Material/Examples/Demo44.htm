@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation - demo</title>
+<script src="angular.min.js"></script>
+<script src="angular-animate.min.js"></script>
+<script src="app36.js"></script>
+<link rel="stylesheet" type="text/css" href="keyframe-animations.css"/>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="MyCtrl">
+    <ul id="items">
+        <li ng-repeat="item in items" class="repeated-item">
+            <div class="close" ng-click="removeItem($index)">&times;</div>
+            {{item.label}}
+        </li>
+    </ul>
+    <button type="button" ng-click="addItem()">Add</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<style>
+	<!--
+	.red
+	{
+		color: #ff0000;
+		font-weight: bold;
+		font-style: italic;
+	}
+	a
+	{
+		color: #0000ff;
+		font-weight: normal;
+		font-style: normal;
+	}
+	-->
+	</style>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		function addBefore()
+		{
+			$("#span1").before("<b>Before the span</b>");
+			$("<b></b>").text("Text inserted before the button").insertBefore($("#btnAppend"));
+		}
+		function addAfter()
+		{
+			$("#span1").after("<i>After the span</i>");
+			$("<b></b>").text("Text inserted after the button").insertAfter($("#btnPrepend"));
+		}
+	</script>
+</head>
+<body id="docBody">
+<br><br>
+<span id="span1" style="color:#ff0000;font-family:Arial">
+Text in the span tag!
+</span>
+<br><br>
+<form id="frm1">
+<input type="button" name="btnAppend" id="btnAppend" onclick="addBefore()" value="Before"/>
+<input type="button" name="btnPrepend" id="btnPrepend" onclick="addAfter()" value="After"/>
+
+</form>
+</body>
+</html>

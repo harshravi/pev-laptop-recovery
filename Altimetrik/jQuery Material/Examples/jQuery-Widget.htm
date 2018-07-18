@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8">
+		<title>jQuery UI Labeler</title>
+		<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.8.21.custom.css"">
+		<link rel="stylesheet" type="text/css" href="ui.labeler.css">
+		<script type="text/javascript" src="jquery1-7-2.js"></script>
+		<script type="text/javascript" src="jquery.ui.core.js"></script>
+		<script type="text/javascript" src="jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="jquery.ui.labeler.js"></script>
+		<script type="text/javascript">
+		   $(function() {
+		        	$("img").labeler({location:"top", added:function(e,ui){
+			      alert(ui.text());
+			}
+			});
+			
+			$("#btnRemove").bind("click", function(){
+			       $("img").labeler("destroy");
+			});
+		   });
+		</script>
+	</head>
+	<body>
+		<img src="INS-Viraat1.jpg" alt="Aircraft carrier INS Viraat">
+		<img src="INS-Shishumar1.jpg" alt="Attack Submarine INS Shishumar">
+		<img src="INS-Delhi1.jpg" alt="Guided missile destroyer INS Delhi">        
+
+	<form>
+                        <input type="button" value="Remove caption" id="btnRemove">
+	</form>
+
+	</body>
+</html>

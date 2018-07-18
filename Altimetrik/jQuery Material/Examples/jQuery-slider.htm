@@ -1,0 +1,72 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Slider </title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.8.21.custom.css">
+	<style>
+	#slider
+	{
+	    width:50%;
+	}
+	#timeSlider
+	{
+	     width:50%;
+	}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+  <script>
+  $(function() {
+
+    $("#slider").slider({
+       min:1,
+       max:200,
+       step:1,
+       change: function(e,ui){
+    	$("#lblCaption").text("The current value is " + $("#slider").slider("value"));
+       }
+      });
+
+    $("#timeSlider").slider({
+        range:"true",
+        min:0,
+        max:24,
+        values: [8,12],
+        change:function(e,ui){
+        $("#timeCaption").text("The time window is between " + $("#timeSlider").slider("values", 0) + " - " + $("#timeSlider").slider("values", 1));
+      }
+    });
+
+    $("#ratingSlider").slider({
+        orientation:"vertical",
+        min:1,
+        max:5,
+        change:function(e,ui){
+        $("#ratingCaption").text("The rating is " + $("#ratingSlider").slider("value"));
+      }
+    });
+
+     $("#lblCaption" ).text("The current value is " + $( "#slider" ).slider("value"));
+      $("#timeCaption").text("The time window is between " + $("#timeSlider").slider("values", 0) + " - " + $("#timeSlider").slider("values", 1));
+     $("#ratingCaption").text("The rating is " + $("#ratingSlider").slider("value"));
+  });
+  </script>
+</head>
+<body>
+ <p></p>
+<span id="lblCaption"></span>
+<div id="slider"></div>
+<p></p><br/>
+<span id="timeCaption"></span>
+<div id="timeSlider"></div>
+
+<p></p><br/>
+<span id="ratingCaption"></span>
+<div id="ratingSlider"></div>
+
+ 
+ 
+</body>
+</html>

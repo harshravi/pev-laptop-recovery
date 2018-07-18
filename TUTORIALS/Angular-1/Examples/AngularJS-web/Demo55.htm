@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src="angular.min.js"></script>
+<script src="touch.js"></script>
+<script src="app47.js"></script>
+<meta charset=utf-8 />
+<style>
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+.contact{
+font-family:Calibri;
+font-size:20pt;
+}
+</style>
+<title>Touch example</title>
+</head>
+<body>
+<h3>Touch - demo</h3>
+<div ng-controller="touchController">
+	<button ng-click="showMsg()">Demo</button>
+	<div class="contact" ng-swipe-left="showDetails()" ng-swipe-right="showNumber()" style="height:150px;background-color:aqua">
+	John Doe <br/>
+	{{contact.details}}
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Button </title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.10.3.custom.css">
+	<style>
+	body {
+	     font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+	     font-size: 85%;
+	}
+	
+	</style>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script>
+  $(function() {
+
+	$("a").button();
+	$("input[type='submit']").button();
+	$("#chk").button();
+	$("#cities").buttonset();
+	$("#currCities").buttonset();
+	
+	$("input[type='submit']").bind("click", function(e){
+	       e.preventDefault();
+	       alert("Button clicked");
+	});
+        
+  });
+  </script>
+</head>
+<body>
+<a href="#">Anchor element</a>
+ <p></p>
+<form>
+    <label for="chk">Check Me!</label><input type="checkbox" name="chk "id="chk"/>
+   <input type="submit" name="btnSubmit" id="btnSubmit" value="Click me!">
+<br/><br/>
+Cities you'd love to be in : <br/>
+   <div id="cities">
+	<label for="chk1">Bengaluru</label><input type="checkbox" id="chk1"/>
+	<label for="chk2">Mumbai</label><input type="checkbox" id="chk2"/>
+	<label for="chk3">Singapore</label><input type="checkbox" id="chk3"/>
+	<label for="chk4">Delhi</label><input type="checkbox" id="chk4"/>
+	<label for="chk5">New York</label><input type="checkbox" id="chk5"/>
+   </div>
+
+<br/><br/>
+
+Current city : <br/>
+   <div id="currCities">
+	<label for="rad1">Bengaluru</label><input type="radio" id="rad1" name="rad"/>
+	<label for="rad2">Mumbai</label><input type="radio" id="rad2" name="rad"/>
+	<label for="rad3">Singapore</label><input type="radio" id="rad3" name="rad"/>
+	<label for="rad4">Delhi</label><input type="radio" id="rad4" name="rad"/>
+	<label for="rad5">New York</label><input type="radio" id="rad5" name="rad"/>
+   </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Built-in directives - demo</title>
+<script src="angular.min.js"></script>
+<script src="app12.js"></script>
+</head>
+<body>
+<h3>Built-in directives Demo</h3>
+<div ng-controller="directiveController">
+	<a ng-href="{{searchProvider}}">Search!</a><br/>
+	<a href="{{searchProvider}}">Search! - will work if you're patient</a><br/><br/>
+	
+	<img src="{{imgUrl}}"><br/><br/> <!-- will result in an error as shown on the console window -->
+	<img ng-src="{{imgUrl}}">
+	
+</div>
+</body>
+</html>

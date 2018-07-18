@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Module demo</title>
+<script src="angular.min.js"></script>
+<script src="app1.js"></script>
+</head>
+<body>
+<div ng-controller="metricController">
+<p>Please set the value in Centigrade </p>
+<form>
+<input ng-model="centiVal" type="text" placeholder="Centigrade value..">
+<button ng-click="convert()">Convert</button>
+</form>
+<p>Value in Fahrenheit - <span ng-bind="fah"></span> </p>
+</div>
+</body>
+</html>

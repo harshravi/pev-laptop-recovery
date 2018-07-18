@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.8.21.custom.css">
+	<style>
+	<!--
+	#sort
+	{
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+		font-size: 12px;
+		margin: 45px;
+		width: 480px;
+		text-align: left;
+		border-collapse: collapse;
+	}
+	#sort th
+	{
+		padding: 8px;
+		font-weight: normal;
+		font-size: 13px;
+		color: #039;
+		background: #b9c9fe;
+	}
+	#sort td
+	{
+		padding: 8px;
+		background: #e8edff;
+		border-top: 1px solid #fff;
+		color: #669;
+	}
+	#sort tbody tr:hover td
+	{
+		background: #d0dafd;
+	}
+
+	-->
+	</style>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script type="text/javascript">
+		// Return a helper with preserved width of cells
+		var fixHelper = function(e, ui) {
+			ui.children().each(function() {
+			$(this).width($(this).width());
+			});
+			return ui;
+		};
+		
+		$(function(){
+			$("#sort tbody").sortable({
+				helper:fixHelper
+			}).disableSelection();
+		});
+	</script>
+</head>
+<body id="docBody">
+<table id="sort" title="Shakespeare Plays">
+	<thead>
+		<tr><th>Year</th><th>Title</th><th>Grade</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>1603</td><td>Othello, The moor of Venice</td><td>A+</td></tr>
+		<tr><td>1590</td><td>The taming of the Shrew</td><td>B</td></tr>
+		<tr><td>1601</td><td>Twelfth Night or What You Will</td><td>A+</td></tr>
+		<tr><td>1599</td><td>Julius Caesar</td><td>C</td></tr>
+		<tr><td>1591</td><td>Richard III</td><td>B</td></tr>
+		<tr><td>1604</td><td>Macbeth</td><td>A+</td></tr>
+		<tr><td>1590</td><td>Midsummer Night's Dream</td><td>A</td></tr>
+		<tr><td>1599</td><td>Henry V</td><td>B</td></tr>
+		<tr><td>1600</td><td>Romeo and Juliet</td><td>A+</td></tr>
+		<tr><td>1601</td><td>Hamlet</td><td>A+</td></tr>
+	</tbody>
+</table>
+</body>
+</html>

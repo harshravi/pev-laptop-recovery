@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.8.21.custom.css">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#myTabs").tabs();
+		});
+	</script>
+</head>
+<body id="docBody">
+<div id="myTabs">
+	<ul>
+		<li><a href="#a">Tab 1</a></li>
+		<li><a href="#b">Tab 2</a></li>
+		<li><a href="#c">Tab 3</a></li>
+	</ul>
+	<div id="a">Content Panel linked to the first tab</div>
+	<div id="b">Content Panel linked to the second tab</div>
+	<div id="c">Content Panel linked to the third tab</div>
+</div>
+</body>
+</html>

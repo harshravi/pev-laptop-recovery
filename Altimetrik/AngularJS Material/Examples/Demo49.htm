@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<script src="angular.min.js"></script>
+<script src="ui-utils.min.js"></script>
+<script src="app41.js"></script>
+<meta charset=utf-8 />
+<title>ui-utils example</title>
+</head>
+<body>
+<h3>event - demo</h3>
+<div ng-controller="imgController">
+<img src="sunshine.jpg" ui-event="{dblclick:'showImg()'}" ng-hide="shouldshowImage"/>
+<br/>
+<form>
+	<textarea name="txtAddress" 
+	ui-keydown="{'enter':'keypressCallback($event)'}"></textarea>
+</form>
+</div>
+
+</body>
+</html>

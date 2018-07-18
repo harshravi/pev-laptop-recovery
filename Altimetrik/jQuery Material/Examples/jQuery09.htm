@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#div1").animate(
+			{
+				"left":"500px"
+			}
+			);
+			$("#div2").animate(
+			{
+				"left":"300px"
+			},
+			3000
+			);
+			$("#div1").animate(
+			{
+				"left":"100px"
+			},
+			3000
+			);
+		});
+	</script>
+</head>
+<body>
+<br>
+<div id="outer">
+<div id="div1" style="background-color:#aabbcc;width:200px;position:absolute">
+This is text in the div!
+<u>Underlined text</u>
+<b>This is some text in bold</b>
+<tt>Tele type text</tt>
+</div>
+</div>
+<br>
+<div id="outer1">
+<div id="div2" style="background-color:aqua;width:200px;position:absolute">
+This is the second div!!
+</div>
+</div>
+<div id="div3" style="background-color:yellow;width:200px">
+This is a div that will toggle between visible and invisible modes!
+</div>
+<br><br>
+</body>
+</html>

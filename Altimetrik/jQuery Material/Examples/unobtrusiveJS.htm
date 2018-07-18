@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+	<title>Unobtrusive JS Demo</title>
+	<script type="text/javascript">
+		function init(){
+		    var link = document.getElementById("srch");
+		    link.addEventListener("click",nWin,true);
+		    link.setAttribute("href","#");
+		    
+		}
+		function nWin()
+		{
+		    window.open("http://www.google.com","_blank");
+		    return false;
+		}
+	</script>
+</head>
+<body onload="init()">
+<div id="div1"></div>
+<a href="http://www.google.com" id="srch">Search</a>
+</body>
+</html>

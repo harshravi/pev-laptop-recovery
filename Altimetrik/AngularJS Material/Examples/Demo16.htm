@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Scope - demo</title>
+<script src="angular.min.js"></script>
+<script src="app9.js"></script>
+</head>
+<body>
+<h3>Scope Demo</h3>
+<div>This is at the top <b> {{ toplevelProperty }} </b></div>
+<div ng-controller="parentController">
+	<p>This is at the parent <b> {{ parentlevelProperty }} </b></p>
+	<div ng-controller="childController">
+		<p>This is at the child <b> {{ childlevelProperty }} </b></p>
+	</div>
+</div>
+	</body>
+</html>

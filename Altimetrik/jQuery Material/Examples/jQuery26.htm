@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.8.21.custom.css">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#dob").datepicker();
+			$("#dob1").datepicker({
+				appendText:" mm/dd/yyyy ",
+				showOtherMonths:true,
+				showAnim:"bounce"
+			});
+			$("#dob2").datepicker({
+				minDate: new Date(),
+				maxDate: "+10",
+				showAnim:"bounce"
+			});
+			$("#dob3").datepicker({
+				numberOfMonths:2
+			});
+			$("#dob4").datepicker({
+				dateFormat:"D, dd M yy"
+			});
+			
+		});
+	</script>
+</head>
+<body id="docBody">
+<form id="frm1">
+	Date of Birth : <input type="text" name="dob" id="dob"><br>
+	Date Picker with other months : <input type="text" name="dob1" id="dob1"><br>
+	Date Picker with Range : <input type="text" name="dob2" id="dob2"><br>
+	Date Picker with Multiple months : <input type="text" name="dob3" id="dob3"><br>
+	Date Picker with Date Format : <input type="text" name="dob4" id="dob4">
+</form>
+</body>
+</html>

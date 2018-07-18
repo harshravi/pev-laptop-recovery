@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Filter - demo</title>
+<script src="angular.min.js"></script>
+<script src="app6.js"></script>
+</head>
+<body>
+<div ng-controller="filterController">
+	<h3>Filters</h3>
+	<p>Usage of limitTo filter :: {{ 'Earth is a beautiful planet' | limitTo : 5 }}
+	<p>Usage of limitTo filter :: {{ 'Earth is a beautiful planet' | limitTo : -6 }}
+	<p>Usage of lowercase filter :: {{ 'Earth is a beautiful planet' | lowercase }}
+	<p>Usage of uppercase filter :: {{ 'Earth is a beautiful planet' | uppercase }}
+	<p>Usage of number filter :: {{ 1234567890 | number }}
+	<p>Usage of number filter :: {{ 3.14159 | number:3 }}
+	</div>
+	</body>
+</html>

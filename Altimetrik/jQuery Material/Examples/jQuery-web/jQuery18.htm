@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+	<title>jQuery Demo</title>
+	<script type="text/javascript" src="jquery1-7-2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$.get("tmpContent.htm",function(data,txtStatus)
+			{
+				alert("Completed, with the status : " + txtStatus + ". The response is " + data);
+				$("#div1").html(data);
+			});
+			$.post("testpost.asp",
+			{
+				name:"Smith",
+				age:"40"
+			}, 
+			function(data,txtStatus)
+			{
+				$("#div2").html("Completed, the server returned " + data);
+			});
+		});
+	</script>
+</head>
+<body id="docBody">
+<br><br>
+<div id="div1" style="color:#ff0000;font-family:Arial;background-color:#001155;width:200px;height:100px">
+</div>
+<br><br>
+<br><br>
+<div id="div2" style="background-color:#aabbcc;height:100px;width:150px">
+</div>
+
+<br><br>
+</body>
+</html>

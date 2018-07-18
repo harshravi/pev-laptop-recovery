@@ -1,0 +1,32 @@
+<div class="vertical-center">
+	<div class="container text-center" ng-controller="LoginController">
+		<div class="head"><span>Projecting</span>&nbsp;<span>Health</span></div>
+		<div class="form">
+			<table>
+				<tr>
+					<td><span>Please provide your login credentials</span><td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="User Name"  ng-required="true" ng-model="userName" class="username"></td>
+				</tr>
+				<tr>
+					<td><input type="password" placeholder="Password" ng-required="true" ng-model="userPass" class="password"></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="Signup" class="btn-sign">
+						<input type="button" value="Login" class="btn-login" ng-click="loginForm()">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<select name="Language">	
+			  				<option value="value1">English</option> 
+						</select>
+						<a href="#">Forgot password</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>			
+</div>
